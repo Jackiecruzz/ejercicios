@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    class Usuario {
+        constructor(password,email) {
+            this.password = password;
+            this.email = email;
+        }
+        Login(contraseña,correo){
+            if(contraseña === this.password && correo === this.email){
+                console.log("puede continuar");
+            }
+        }
+        NuevaContraseña(contraseña){
+            if (constraseña.lenght === 10) {
+                this.password = contraseña
+                console.log(contraseña)
+            }
+        }
+        Logout(correo){
+            if(correo){
+                console.log("usuario ha finalizado sesión")
+            }
+        }
+
+
+    }new Usuario('12345', 'jimena@gmail.com')
+    let user = new Usuario('12345','jimena@gmail.com')
+
+
+</script>
+</body>
+</html>
