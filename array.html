@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jackie cruzzzz</title>
+</head>
+<body>
+<script>
+const carros = ["saab","volvo","bmw","journey","jetta","audi"];
+/*console.log(carros[0]);
+console.log(carros[1]);
+console.log(carros[2]);*/
+/*for (let i = 0; i < carros.length; i ++){
+    console.log(carros[i]);
+}*/
+for (let carro in carros){
+    console.log(carros[carro]);
+
+}
+//multidimensionales
+ var temperaturas_medias_ciudad0 = new Array(3)
+temperaturas_medias_ciudad0[0] = 12
+temperaturas_medias_ciudad0[1] = 10
+temperaturas_medias_ciudad0[2] = 11
+
+var temperaturas_medias_ciudad1 = new Array(3)
+temperaturas_medias_ciudad1[0] = 5
+temperaturas_medias_ciudad1[1] = 0
+temperaturas_medias_ciudad1[2] = 2
+
+var temperaturas_medias_ciudad2 = new Array(3)
+temperaturas_medias_ciudad2[0] = 1
+temperaturas_medias_ciudad2[1] = 2
+temperaturas_medias_ciudad2[2] = 3
+
+var arrayMuchasDimensiones = new Array(3)
+arrayMuchasDimensiones[0] = temperaturas_medias_ciudad0
+arrayMuchasDimensiones[1] = temperaturas_medias_ciudad1
+arrayMuchasDimensiones[2] = temperaturas_medias_ciudad2
+
+//console.log(arrayMuchasDimensiones[2][2]);
+
+for (i=0; i<arrayMuchasDimensiones.length;i++){
+    for (j=0;j<arrayMuchasDimensiones[i].length;j++){
+        console.log("este es i "+i+" j "+j)
+        console.log( arrayMuchasDimensiones[i][j]);
+        arrayMuchasDimensiones[i][j] = arrayMuchasDimensiones[i][j]+1;
+        console.log(arrayMuchasDimensiones[i][j])
+    }
+}
+
+</script>
+</body>
+</html>
