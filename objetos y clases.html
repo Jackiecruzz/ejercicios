@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orientada a objetos</title>
+</head>
+<body>
+<script>
+ /* let persona1= {nombre : "juan", edad: "31"};
+  console.log(persona1.nombre);
+  console.log(persona1.edad);
+  console.log(persona1["nombre"]);*/
+ /*class Persona{
+     hablar() {
+         console.log("hola soy una persona!!!!")
+     }
+     caminar(){
+         console.log("me encanta caminar con juan")
+     }
+     amar(){
+         console.log("amo a mi familia")
+     }
+     l
+ }
+ let persona2 = new Persona("juan","31");
+ persona2.hablar();
+
+ persona2.caminar();
+ persona2.amar();
+ let persona3 = new Persona("samuel","29");
+ persona3.caminar();*/
+
+ class Animal{
+     nombre;
+     edad;
+     genero;
+     cartilla_vacuna={vacuna1:"v1",vacuna2:"v2"};
+
+     hablar(){
+
+         return this.cartilla_vacuna.vacuna1;
+     }
+     constructor(nombre="generico",edad="random",genero="nose"){
+        this.nombre=nombre;
+        this.edad=edad;
+        this.genero=genero;
+         console.warn("ha nacido un animal y se llama"+this.nombre);
+         console.log("tengo la edad necesaria que es"+this.edad);
+         console.log("y soy del genero"+this.genero);
+ }
+
+ }
+
+ const pato = new Animal(" Donald",2,"man");
+ console.log(pato.hablar());
+ const perro = new Animal(" pluto",3,"man");
+ console.log(perro.hablar());
+ const gato = new Animal(" marco",10,"woman");
+ console.log(gato.hablar());
+ const tigre = new  Animal();
+
+</script>
+</body>
+</html>
